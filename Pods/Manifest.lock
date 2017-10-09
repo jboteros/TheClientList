@@ -1,0 +1,19 @@
+PODS:
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: d0396f185cb059064846135de7b1e03f3be3a557
+
+COCOAPODS: 1.1.1
