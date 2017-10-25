@@ -114,10 +114,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
         // Camera position on localization client or fixed point
         if Reachability.isLocationServiceEnabled() == true {
-            let camera = GMSCameraPosition.camera(withLatitude: (mapContainer.myLocation?.coordinate.latitude)!,longitude: (mapContainer.myLocation?.coordinate.longitude)!,zoom: 2)
+            let camera = GMSCameraPosition.camera(withLatitude: (mapContainer.myLocation?.coordinate.latitude)!,longitude: (mapContainer.myLocation?.coordinate.longitude)!,zoom: 8)
             mapContainer.camera = camera
         }else{
-            let camera = GMSCameraPosition.camera(withLatitude:18.0000,longitude: -70.0000,zoom: 2)
+            let camera = GMSCameraPosition.camera(withLatitude:18.0000,longitude: -70.0000,zoom: 8)
             mapContainer.camera = camera
         }
         
@@ -178,7 +178,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         
         marker.map = mapContainer
         
-        let camera = GMSCameraPosition.camera(withLatitude:Double(lat)!,longitude: Double(lng)!,zoom: 3)
+        let camera = GMSCameraPosition.camera(withLatitude:Double(lat)!,longitude: Double(lng)!,zoom: 8)
         mapContainer.camera = camera
     }
     //Calculate distance between two Lat/Lng coordinates
@@ -220,7 +220,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         
         loadmapContainer(isPointMap: true)
         //Puts the camera at the selected point
-        let camera = GMSCameraPosition.camera(withLatitude:coordinate.latitude,longitude: coordinate.longitude,zoom: 2)
+        let camera = GMSCameraPosition.camera(withLatitude:coordinate.latitude,longitude: coordinate.longitude,zoom: 8)
         mapContainer.camera = camera
         
         //Update status buttons
